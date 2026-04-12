@@ -7,7 +7,8 @@ import streamlit as st
 import requests
 import json
 
-API = "http://localhost:8000/api"
+import os
+API = os.getenv("API_URL", "https://drg-calculator.onrender.com/api")
 
 st.set_page_config(page_title="DRG Calculator", page_icon="⚕", layout="wide")
 
