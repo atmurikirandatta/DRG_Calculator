@@ -261,6 +261,15 @@ def render_results(data):
 # ============================================================
 st.markdown("# ⚕ DRG Calculator")
 st.markdown("*MS-DRG Grouper · CMS V43.1 · Production Accurate*") # · By Kiran Datta Atmuri
+
+with st.expander("ℹ️ How to Use", expanded=True):
+    st.markdown("""
+    **Option 1 — Patient Lookup:**  
+    Enter a Patient ID (1–21) in the first tab. The system auto-fetches diagnoses, procedures & demographics from the database and calculates the DRG.
+    
+    **Option 2 — Manual Entry:**  
+    Use the second tab to enter ICD-10-CM/PCS codes manually. Enter the principal diagnosis, secondary diagnoses with POA indicators, procedure codes, age, sex, and discharge status.
+    """)
 st.divider()
 
 # ============================================================
